@@ -13,8 +13,8 @@
   --ink-2:      #0c4a46;   /* lighter green for hover/links */
   --text:       #23302e;   /* body text */
   --muted:      #5f6f6c;   /* secondary text */
-  --gold:       #b98942;
-  --gold-deep:  #9a6d2e;
+  --gold:       #b98942;   /* bright gold — accents/lines & text on DARK sections */
+  --gold-deep:  #8a601f;   /* darker gold — text/labels on CREAM (WCAG AA ≥4.5:1) */
   --line:       #e5dcc6;   /* hairline on cream */
   --white:      #ffffff;
 
@@ -162,6 +162,7 @@ p { margin: 0 0 1rem; }
 .pillar__list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 9px; height: 9px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(185,137,66,.14); }
 .pillar__kicker { margin-top: 1.6rem; font-family: var(--font-display); font-style: italic; font-size: 1.2rem; color: var(--ink); }
 .section--ink .pillar__kicker { color: #fff; }
+.section--ink .pillar__list li { color: #d3e2df; }
 .section--ink .pillar__list li::before { box-shadow: 0 0 0 4px rgba(185,137,66,.24); }
 .media-ph {
   border-radius: var(--radius); border: 1px dashed #cdbf9d; background:
