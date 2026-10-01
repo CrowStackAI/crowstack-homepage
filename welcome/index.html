@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome &middot; Crowstack</title>
+<meta name="description" content="Crowstack: engineering rigor for AI-driven development.">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=20261001-1">
+<style>
+  /* welcome landing specifics (reuses the root design system) */
+  .welcome { min-height: 100vh; display: grid; align-content: center; }
+  .welcome__logo { width: 76px; height: auto; margin: 0 auto 1.4rem; display: block; }
+  .welcome__head { text-align: center; max-width: 52rem; margin: 0 auto; }
+  .welcome__head .eyebrow { justify-content: center; }
+  .welcome__head .lede { margin-inline: auto; text-align: justify; text-align-last: center; }
+  .welcome__actions { margin-top: var(--space-lg); display: flex; justify-content: center; }
+  .founders { margin-top: clamp(3rem, 6vw, 4.5rem); }
+  .founder__actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.1rem; }
+</style>
+</head>
+<body>
+  <main class="section welcome">
+    <div class="container">
+
+      <div class="welcome__head">
+        <img class="welcome__logo" src="../assets/crowstack-crow-gold-tie.svg" alt="Crowstack">
+        <p class="eyebrow">Welcome</p>
+        <h1 class="h2">Engineering rigor for <span class="accent-gold">AI-driven</span> development.</h1>
+        <p class="lede">Crowstack is a unified platform that brings the discipline of great engineering teams to your agents: embedded process, accumulating memory, real human-agent collaboration, and full auditability.</p>
+        <div class="welcome__actions">
+          <a class="btn btn-primary" href="../">Visit the main site</a>
+        </div>
+      </div>
+
+      <div class="founders team-grid">
+
+        <div class="member">
+          <div class="member__top">
+            <img src="../assets/ethan.png" alt="Ethan">
+            <div>
+              <div class="member__name">Ethan</div>
+              <div class="member__role">Co-founder</div>
+            </div>
+          </div>
+          <p>CEO and co-founder of Refold Languages, building software for tens of thousands of language learners. Before that, Director of Engineering &amp; Product at WeSpire. B.Sc. Computer Science &amp; Physics; 15+ years shipping software.</p>
+          <div class="founder__actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/epuzarne" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="ethan.vcf" download="Ethan-Crowstack.vcf">Download contact</a>
+          </div>
+        </div>
+
+        <div class="member">
+          <div class="member__top">
+            <img src="../assets/chris.png" alt="Chris">
+            <div>
+              <div class="member__name">Chris</div>
+              <div class="member__role">Co-founder</div>
+            </div>
+          </div>
+          <p>CEO &amp; Co-founder of Divisible Inc. Product-minded engineer who has shipped across mobile, AI, real estate, and oil &amp; gas. Previously software engineering at BlackBerry. Bachelor Computer Science and MBA. 15+ years shipping software.</p>
+          <div class="founder__actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/csaundersca" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="chris.vcf" download="Chris-Crowstack.vcf">Download contact</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
