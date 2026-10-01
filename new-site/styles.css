@@ -141,7 +141,7 @@ p { margin: 0 0 1rem; }
 .fcard { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.9rem; box-shadow: var(--shadow); }
 .fcard h3 { margin-bottom: .6rem; }
 .fcard .tag { font-family: var(--font-body); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-deep); }
-.rootcause { margin-top: 1.9rem; font-size: 1.2rem; color: var(--ink); border-left: 3px solid var(--gold); padding: .3rem 0 .3rem 1.2rem; max-width: 64ch; }
+.rootcause { margin-top: 1.9rem; font-size: 1.2rem; color: var(--ink); max-width: 64ch; }
 @media (max-width: 720px) { .failure-grid { grid-template-columns: 1fr; } }
 
 /* ---------- pillars overview ---------- */
