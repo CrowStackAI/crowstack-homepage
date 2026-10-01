@@ -27,6 +27,11 @@
   --radius-sm: 10px;
   --shadow: 0 1px 2px rgba(3,47,46,.04), 0 12px 32px -12px rgba(3,47,46,.14);
   --shadow-lg: 0 24px 60px -20px rgba(3,47,46,.28);
+
+  /* vertical rhythm scale */
+  --space-sm: 1rem;    /* heading: its paragraph/line */
+  --space-md: 1.75rem; /* paragraph: paragraph */
+  --space-lg: 2.5rem;  /* content block: block / major dividers */
 }
 
 /* ---------- reset ---------- */
@@ -131,21 +136,22 @@ p { margin: 0 0 1rem; }
 
 /* ---------- generic section header ---------- */
 .section-head { max-width: 46rem; margin-bottom: clamp(2.4rem, 4vw, 3.6rem); }
+.section-head .lede { margin-top: var(--space-sm); }
 .section-head.center { margin-inline: auto; text-align: center; }
 .section-head.center .eyebrow { justify-content: center; }
 .section-head.center .lede { margin-inline: auto; text-align: justify; text-align-last: center; }
 
 /* ---------- problem: failure-mode cards ---------- */
 .lead-line { font-family: var(--font-display); font-size: clamp(2rem, 4.4vw, 3.2rem); color: var(--ink); font-weight: 600; letter-spacing: -.02em; max-width: 20ch; }
-.failure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2.6rem; }
+.failure-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: var(--space-lg); }
 .fcard { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.9rem; box-shadow: var(--shadow); }
 .fcard h3 { margin-bottom: .6rem; }
 .fcard .tag { font-family: var(--font-body); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-deep); }
-.rootcause { margin-top: 1.9rem; font-size: 1.2rem; color: var(--ink); max-width: 64ch; }
+.rootcause { margin-top: var(--space-lg); font-size: 1.2rem; color: var(--ink); max-width: 64ch; }
 @media (max-width: 720px) { .failure-grid { grid-template-columns: 1fr; } }
 
 /* ---------- pillars overview ---------- */
-.pillar-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; margin-top: 2.6rem; }
+.pillar-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; margin-top: var(--space-lg); }
 .pcard { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.6rem; display: flex; gap: 1rem; align-items: flex-start; box-shadow: var(--shadow); transition: transform .15s ease, box-shadow .2s ease; }
 .pcard:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 .pcard .ic { font-size: 1.6rem; line-height: 1; flex: none; }
@@ -181,7 +187,7 @@ p { margin: 0 0 1rem; }
 }
 
 /* ---------- team ---------- */
-.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2.6rem; }
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: var(--space-lg); }
 .member { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.7rem; box-shadow: var(--shadow); }
 .member__top { display: flex; align-items: center; gap: 1rem; }
 .member__top img { width: 66px; height: 66px; border-radius: 50%; object-fit: cover; background: var(--cream-3); }
@@ -207,9 +213,9 @@ p { margin: 0 0 1rem; }
 .footer__meta { width: 100%; border-top: 1px solid rgba(255,255,255,.12); margin-top: 1.6rem; padding-top: 1.4rem; font-size: .85rem; color: #8fa8a3; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .6rem; }
 
 /* ---------- history sub-block + timeline (Problem) ---------- */
-.subsection { margin-top: clamp(1.8rem, 3.5vw, 2.8rem); }
-.history-title { margin-bottom: .9rem; }
-.timeline { margin: 2.2rem 0 1.8rem; display: grid; gap: .65rem; }
+.subsection { margin-top: var(--space-lg); }
+.history-title { margin-bottom: var(--space-sm); }
+.timeline { margin: var(--space-lg) 0; display: grid; gap: .65rem; }
 .tl-row { display: grid; grid-template-columns: 104px repeat(3, 1fr); gap: .8rem; align-items: stretch; }
 .tl-label { align-self: center; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .chip { display: flex; align-items: center; justify-content: center; text-align: center; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: .7rem .9rem; font-weight: 600; color: var(--ink); font-size: .95rem; box-shadow: var(--shadow); min-height: 56px; }
@@ -223,17 +229,17 @@ p { margin: 0 0 1rem; }
 }
 
 /* ---------- our-solution principles (Approach) ---------- */
-.solution-block { max-width: 62rem; margin: clamp(2.2rem,4vw,3.2rem) auto 0; }
+.solution-block { max-width: 62rem; margin: var(--space-lg) auto 0; }
 .solution-lede { text-align: justify; text-align-last: center; margin-inline: auto; }
-.principles { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0 0; text-align: left; }
+.principles { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: var(--space-lg) 0 0; text-align: left; }
 .principle { display: flex; gap: 1rem; align-items: flex-start; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem 1.5rem; box-shadow: var(--shadow); }
 .principle-num { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--gold-deep); line-height: 1.1; flex: none; }
 .principle-text { display: flex; flex-direction: column; gap: .25rem; }
 .principle-text strong { color: var(--ink); font-size: 1.05rem; line-height: 1.3; }
-.principle-text .over { color: var(--muted); text-decoration: line-through; font-size: .92rem; }
-.solution-payoff { text-align: justify; text-align-last: center; font-size: 1.15rem; color: var(--text); max-width: 58ch; margin: 1.8rem auto 0; }
+.principle-text .over { color: var(--muted); font-size: .92rem; }
+.solution-payoff { text-align: justify; text-align-last: center; font-size: 1.15rem; color: var(--text); max-width: 58ch; margin: var(--space-lg) auto 0; }
 .solution-payoff .payoff { display: block; margin-top: .45rem; font-family: var(--font-display); font-style: italic; font-size: 1.5rem; color: var(--ink); }
-.pillars-intro { text-align: center; margin-top: clamp(2.6rem, 5vw, 3.6rem); }
+.pillars-intro { text-align: center; margin-top: var(--space-lg); }
 .pillars-intro h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); }
 @media (max-width: 680px) { .principles { grid-template-columns: 1fr; } }
 
