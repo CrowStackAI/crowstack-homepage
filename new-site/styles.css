@@ -1,5 +1,5 @@
 /* ============================================================
-   Crowstack — new-site design system
+   Crowstack: new-site design system
    Brand tokens sampled from the product deck:
    cream #fbf8f0 · deep green #032f2e · gold #b98942 · mascot grey #b0aea8
    Display: Fraunces (editorial serif) · Body/UI: Inter
@@ -9,12 +9,12 @@
   --cream:      #fbf8f0;
   --cream-2:    #f5efe1;   /* alternating section bg / soft panels */
   --cream-3:    #efe7d4;   /* deeper sand for cards on cream */
-  --ink:        #032f2e;   /* deep green — brand + headings */
+  --ink:        #032f2e;   /* deep green: brand + headings */
   --ink-2:      #0c4a46;   /* lighter green for hover/links */
   --text:       #23302e;   /* body text */
   --muted:      #5f6f6c;   /* secondary text */
-  --gold:       #b98942;   /* bright gold — accents/lines & text on DARK sections */
-  --gold-deep:  #8a601f;   /* darker gold — text/labels on CREAM (WCAG AA ≥4.5:1) */
+  --gold:       #b98942;   /* bright gold: accents/lines & text on DARK sections */
+  --gold-deep:  #8a601f;   /* darker gold: text/labels on CREAM (WCAG AA ≥4.5:1) */
   --line:       #e5dcc6;   /* hairline on cream */
   --white:      #ffffff;
 
@@ -133,7 +133,7 @@ p { margin: 0 0 1rem; }
 .section-head { max-width: 46rem; margin-bottom: clamp(2.4rem, 4vw, 3.6rem); }
 .section-head.center { margin-inline: auto; text-align: center; }
 .section-head.center .eyebrow { justify-content: center; }
-.section-head.center .lede { margin-inline: auto; }
+.section-head.center .lede { margin-inline: auto; text-align: justify; text-align-last: center; }
 
 /* ---------- problem: failure-mode cards ---------- */
 .lead-line { font-family: var(--font-display); font-size: clamp(2rem, 4.4vw, 3.2rem); color: var(--ink); font-weight: 600; letter-spacing: -.02em; max-width: 20ch; }
@@ -193,7 +193,7 @@ p { margin: 0 0 1rem; }
 
 /* ---------- alpha CTA ---------- */
 .cta-wrap { text-align: center; max-width: 60rem; margin-inline: auto; }
-.cta-wrap .lede { margin-inline: auto; }
+.cta-wrap .lede { margin-inline: auto; text-align: justify; text-align-last: center; }
 .cta-wrap .btn { margin-top: 1.8rem; }
 
 /* ---------- footer ---------- */
@@ -207,7 +207,7 @@ p { margin: 0 0 1rem; }
 .footer__meta { width: 100%; border-top: 1px solid rgba(255,255,255,.12); margin-top: 1.6rem; padding-top: 1.4rem; font-size: .85rem; color: #8fa8a3; display: flex; justify-content: space-between; flex-wrap: wrap; gap: .6rem; }
 
 /* ---------- history sub-block + timeline (Problem) ---------- */
-.subsection { margin-top: clamp(3rem, 6vw, 5rem); }
+.subsection { margin-top: clamp(1.8rem, 3.5vw, 2.8rem); }
 .history-title { margin-bottom: .9rem; }
 .timeline { margin: 2.2rem 0 1.8rem; display: grid; gap: .65rem; }
 .tl-row { display: grid; grid-template-columns: 104px repeat(3, 1fr); gap: .8rem; align-items: stretch; }
@@ -216,9 +216,6 @@ p { margin: 0 0 1rem; }
 .chip-q { background: var(--ink); color: #fff; border-color: var(--ink); font-family: var(--font-display); font-size: 1.5rem; }
 .tl-arrows { display: grid; grid-template-columns: 104px repeat(3, 1fr); gap: .8rem; color: var(--gold-deep); font-size: 1.15rem; line-height: 1; }
 .tl-arrows span { text-align: center; }
-.timeline-coda { font-size: 1.1rem; color: var(--text); max-width: 62ch; }
-.timeline-coda em { color: var(--ink); font-style: italic; font-family: var(--font-display); font-size: 1.25rem; display: inline-block; margin-top: .35rem; }
-.transition-line { margin: 2rem 0 0; font-size: 1.2rem; color: var(--ink); font-weight: 500; max-width: 62ch; }
 @media (max-width: 680px) {
   .tl-row { grid-template-columns: 1fr; gap: .5rem; }
   .tl-label { margin-top: .7rem; }
@@ -227,14 +224,14 @@ p { margin: 0 0 1rem; }
 
 /* ---------- our-solution principles (Approach) ---------- */
 .solution-block { max-width: 62rem; margin: clamp(2.2rem,4vw,3.2rem) auto 0; }
-.solution-lede { text-align: center; margin-inline: auto; }
+.solution-lede { text-align: justify; text-align-last: center; margin-inline: auto; }
 .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0 0; text-align: left; }
 .principle { display: flex; gap: 1rem; align-items: flex-start; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem 1.5rem; box-shadow: var(--shadow); }
 .principle-num { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; color: var(--gold-deep); line-height: 1.1; flex: none; }
 .principle-text { display: flex; flex-direction: column; gap: .25rem; }
 .principle-text strong { color: var(--ink); font-size: 1.05rem; line-height: 1.3; }
 .principle-text .over { color: var(--muted); text-decoration: line-through; font-size: .92rem; }
-.solution-payoff { text-align: center; font-size: 1.15rem; color: var(--text); max-width: 58ch; margin: 1.8rem auto 0; }
+.solution-payoff { text-align: justify; text-align-last: center; font-size: 1.15rem; color: var(--text); max-width: 58ch; margin: 1.8rem auto 0; }
 .solution-payoff .payoff { display: block; margin-top: .45rem; font-family: var(--font-display); font-style: italic; font-size: 1.5rem; color: var(--ink); }
 .pillars-intro { text-align: center; margin-top: clamp(2.6rem, 5vw, 3.6rem); }
 .pillars-intro h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); }
