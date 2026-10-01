@@ -231,8 +231,6 @@ p { margin: 0 0 1rem; }
 /* ---------- our-solution (Approach) ---------- */
 .solution-block { max-width: 62rem; margin: var(--space-lg) auto 0; }
 .solution-lede { text-align: justify; text-align-last: center; margin-inline: auto; }
-.solution-payoff { text-align: justify; text-align-last: center; font-size: 1.15rem; color: var(--text); max-width: 58ch; margin: var(--space-lg) auto 0; }
-.solution-payoff .payoff { display: block; margin-top: .45rem; font-family: var(--font-display); font-style: italic; font-size: 1.5rem; color: var(--ink); }
 .pillars-intro { text-align: center; margin-top: var(--space-lg); }
 .pillars-intro h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); }
 
