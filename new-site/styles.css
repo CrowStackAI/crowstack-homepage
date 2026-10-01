@@ -80,6 +80,7 @@ p { margin: 0 0 1rem; }
 
 .accent-gold { color: var(--gold-deep); }
 .accent { color: var(--gold-deep); font-style: italic; }
+.approach-line2 { display: block; margin-top: var(--space-sm); }
 
 /* ---------- buttons ---------- */
 .btn {
