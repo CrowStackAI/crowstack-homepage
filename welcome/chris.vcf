@@ -1,7 +1,7 @@
 BEGIN:VCARD
 VERSION:4.0
-N:;Chris;;;
-FN:Chris
+N:Saunders;Chris;;;
+FN:Chris Saunders
 ORG:Crowstack
 TITLE:Co-founder
 EMAIL;TYPE=work:chris@crowstack.ai
