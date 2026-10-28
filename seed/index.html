@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seed round &middot; Crowstack</title>
+<meta name="description" content="Crowstack is raising its seed round: engineering rigor for AI-driven development.">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=20261001-1">
+<style>
+  /* seed landing specifics (reuses the root design system and the /welcome layout) */
+  .welcome__head { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+  .welcome__intro { max-width: 40rem; }
+  .welcome__intro .eyebrow { justify-content: flex-start; }
+  .welcome__intro .lede { margin-top: 1rem; }
+  .welcome__actions { margin-top: var(--space-lg); display: flex; flex-wrap: wrap; gap: .9rem; }
+  .welcome__art { display: grid; place-items: center; }
+  .welcome__logo { width: min(240px, 72%); height: auto; display: block; }
+  .seed__body { max-width: 46rem; }
+  .seed__body .lede + .lede { margin-top: var(--space-md); }
+  .founder__actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.1rem; }
+  .founder__actions .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; }
+  .btn__ic { width: 18px; height: 18px; flex: none; }
+  @media (max-width: 760px) {
+    .welcome__head { grid-template-columns: 1fr; }
+    .welcome__art { display: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <section class="section">
+    <div class="container">
+      <div class="welcome__head">
+        <div class="welcome__intro">
+          <p class="eyebrow">Seed round</p>
+          <h1 class="h2">Engineering rigor for <span class="accent-gold">AI-driven</span> development.</h1>
+          <p class="lede">Crowstack is a unified platform that brings the discipline of great engineering teams to your agents: embedded process, accumulating memory, real human-agent collaboration, and full auditability.</p>
+          <div class="welcome__actions">
+            <a class="btn btn-primary" href="#book">Book a call with us</a>
+            <a class="btn btn-ghost" href="../">Visit the main site</a>
+          </div>
+        </div>
+        <div class="welcome__art">
+          <img class="welcome__logo" src="../assets/crowstack-crow-gold-tie.svg" alt="Crowstack">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ink anchor" id="round">
+    <div class="container">
+      <div class="seed__body">
+        <p class="eyebrow">Our seed round</p>
+        <h2 class="h2">We're raising our <span class="accent-gold">seed round.</span></h2>
+        <p class="lede">Crowstack is fundraising now. We're actively looking for investors who want to help the industry build better software.</p>
+        <p class="lede">Agents are changing how software gets written. We're building the platform that makes sure what they ship is built with the rigor of a great engineering team.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt anchor" id="book">
+    <div class="container">
+      <div class="cta-wrap">
+        <p class="eyebrow">Talk to the founders</p>
+        <h2 class="h2">Book a call with us.</h2>
+        <p class="lede">Want to learn more about Crowstack and the round? Pick a time to speak with the founders.</p>
+        <a class="btn btn-primary" href="https://calendar.app.google/PbEtXiBMmA8ggn7P8" target="_blank" rel="noopener">Book a call</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section anchor" id="founders">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The founders</p>
+        <h2 class="h2">Built by people who ship.</h2>
+      </div>
+      <div class="team-grid">
+
+      <div class="member">
+            <div class="member__top">
+              <img src="../assets/ethan.png" alt="Ethan">
+              <div>
+                <div class="member__name">Ethan Puzarne</div>
+                <div class="member__role">Co-founder</div>
+              </div>
+            </div>
+            <p>CEO and co-founder of Refold Languages, building software for tens of thousands of language learners. Before that, Director of Engineering &amp; Product at WeSpire. B.Sc. Computer Science &amp; Physics; 15+ years shipping software.</p>
+            <div class="founder__actions">
+              <a class="btn btn-ghost" href="mailto:ethan@crowstack.ai"><svg class="btn__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>ethan@crowstack.ai</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/epuzarne" target="_blank" rel="noopener"><svg class="btn__ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+              <a class="btn btn-ghost" href="../welcome/ethan.vcf" download="Ethan-Crowstack.vcf"><svg class="btn__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2.2"/><path d="M5.5 16.5c.6-1.8 2-2.6 3.5-2.6s2.9.8 3.5 2.6"/><line x1="14.5" y1="9" x2="18.5" y2="9"/><line x1="14.5" y1="12.5" x2="18.5" y2="12.5"/></svg>Download vCard</a>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="member__top">
+              <img src="../assets/chris.png" alt="Chris">
+              <div>
+                <div class="member__name">Chris Saunders</div>
+                <div class="member__role">Co-founder</div>
+              </div>
+            </div>
+            <p>CEO &amp; Co-founder of Divisible Inc. Product-minded engineer who has shipped across mobile, AI, real estate, and oil &amp; gas. 8 patents. Previously software engineering at BlackBerry. Bachelor Computer Science and MBA. 15+ years shipping software.</p>
+            <div class="founder__actions">
+              <a class="btn btn-ghost" href="mailto:chris@crowstack.ai"><svg class="btn__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>chris@crowstack.ai</a>
+              <a class="btn btn-ghost" href="https://calendar.app.google/PbEtXiBMmA8ggn7P8" target="_blank" rel="noopener"><svg class="btn__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="2.5" x2="8" y2="6.5"/><line x1="16" y1="2.5" x2="16" y2="6.5"/></svg>Book a call</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/csaundersca" target="_blank" rel="noopener"><svg class="btn__ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+              <a class="btn btn-ghost" href="../welcome/chris.vcf" download="Chris-Crowstack.vcf"><svg class="btn__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2.2"/><path d="M5.5 16.5c.6-1.8 2-2.6 3.5-2.6s2.9.8 3.5 2.6"/><line x1="14.5" y1="9" x2="18.5" y2="9"/><line x1="14.5" y1="12.5" x2="18.5" y2="12.5"/></svg>Download vCard</a>
+            </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
