@@ -27,7 +27,10 @@
   .welcome__art { display: grid; place-items: center; }
   .welcome__logo { width: min(240px, 72%); height: auto; display: block; }
   .seed__body { max-width: 46rem; }
-  .seed__body .lede, .cta-wrap .lede { margin-top: var(--space-sm); }
+  .seed__body .lede { margin-top: var(--space-sm); }
+  .seed__book { margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid rgba(255,255,255,.14); }
+  .seed__book-title { font-size: clamp(1.5rem, 2.4vw, 2rem); }
+  .seed__book .btn { margin-top: var(--space-md); }
   .seed__body .lede + .lede { margin-top: var(--space-md); }
   .founder__actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.1rem; }
   .founder__actions .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; }
@@ -50,7 +53,6 @@
           <p class="lede">Crowstack is a unified platform that brings the discipline of great engineering teams to your agents: embedded process, accumulating memory, real human-agent collaboration, and full auditability.</p>
           <div class="welcome__actions">
             <a class="btn btn-primary" href="#book">Book a call with us</a>
-            <a class="btn btn-ghost" href="../">Visit the main site</a>
           </div>
         </div>
         <div class="welcome__art">
@@ -67,17 +69,11 @@
         <h2 class="h2">We're raising our <span class="accent-gold">seed round.</span></h2>
         <p class="lede">Crowstack is fundraising now. We're actively looking for investors who want to help the industry build better software.</p>
         <p class="lede">Agents are changing how software gets written. We're building the platform that makes sure what they ship is built with the rigor of a great engineering team.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt anchor" id="book">
-    <div class="container">
-      <div class="cta-wrap">
-        <p class="eyebrow">Talk to the founders</p>
-        <h2 class="h2">Book a call with us.</h2>
-        <p class="lede">Want to learn more about Crowstack and the round? Pick a time to speak with the founders.</p>
-        <a class="btn btn-primary" href="https://calendar.app.google/PbEtXiBMmA8ggn7P8" target="_blank" rel="noopener">Book a call</a>
+        <div class="seed__book anchor" id="book">
+          <h3 class="seed__book-title">Book a call with us.</h3>
+          <p class="lede">Want to learn more about Crowstack and the round? Pick a time to speak with the founders.</p>
+          <a class="btn btn-gold" href="https://calendar.app.google/PbEtXiBMmA8ggn7P8" target="_blank" rel="noopener">Book a call</a>
+        </div>
       </div>
     </div>
   </section>
