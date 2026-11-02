@@ -81,6 +81,7 @@ p { margin: 0 0 1rem; }
 
 .accent-gold { color: var(--gold-deep); }
 .accent { color: var(--gold-deep); font-style: italic; }
+.accent-italic { font-style: italic; }
 .approach-line2 { display: inline-block; margin-top: var(--space-sm); }
 
 /* ---------- buttons ---------- */
@@ -249,13 +250,6 @@ p { margin: 0 0 1rem; }
 .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
 .step-grid .fcard h3 { margin-top: .5rem; }
 .loop { margin-top: var(--space-lg); }
-.loop__chips { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
-.loop__step { display: inline-flex; align-items: center; gap: .8rem; }
-.loop__chips .chip { min-width: 9rem; }
-@media (max-width: 480px) { .loop__chips .chip { min-width: 6.5rem; } }
-.loop__arrow { color: var(--gold-deep); display: inline-flex; }
-.loop__arrow svg { width: 1.4rem; height: 1.4rem; }
-.loop .rootcause { margin-top: var(--space-md); }
 .product__cta { margin-top: var(--space-md); }
 
 /* ---------- services ---------- */
