@@ -26,7 +26,8 @@
   .welcome__actions { margin-top: var(--space-md); display: flex; flex-wrap: wrap; gap: .9rem; }
   .welcome__art { display: grid; place-items: center; }
   .welcome__logo { width: min(280px, 72%); height: auto; display: block; filter: drop-shadow(0 30px 50px rgba(3,47,46,.22)); }
-  .welcome__main-link { display: inline-block; margin-top: var(--space-md); font-weight: 600; }
+  .welcome__main-link { display: inline-flex; align-items: center; gap: .4rem; margin-top: var(--space-md); font-weight: 600; }
+  .welcome__arrow { width: 1.1rem; height: 1.1rem; }
   @media (max-width: 760px) {
     .welcome__head { grid-template-columns: 1fr; }
     .welcome__art { display: none; }
@@ -51,7 +52,7 @@
             <a class="btn btn-primary" href="https://calendar.app.google/LeszBhLbjRBb8Lea9" target="_blank" rel="noopener">Book a call</a>
             <a class="btn btn-ghost" href="mailto:hello@crowstack.ai?subject=Crowstack%20refactoring">Email us</a>
           </div>
-          <a class="welcome__main-link" href="/">Visit the main site &rarr;</a>
+          <a class="welcome__main-link" href="/">Visit the main site <svg class="welcome__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></a>
         </div>
         <div class="welcome__art">
           <img class="welcome__logo" src="/assets/crowstack-crow-gold-tie.svg" alt="The Crowstack crow butler">
