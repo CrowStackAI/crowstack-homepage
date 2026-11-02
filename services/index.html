@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refactoring services &middot; Crowstack</title>
+<meta name="description" content="Vibe-coded app stuck? Crowstack refactors existing codebases onto a secure foundation that is easier to maintain, faster to build on, and ready to scale.">
+<link rel="icon" href="/favicon.ico">
+<link rel="canonical" href="https://crowstack.ai/services/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://crowstack.ai/services/">
+<meta property="og:title" content="Turn your Slop into Michelin-star Dining">
+<meta property="og:description" content="Crowstack refactors existing codebases onto a secure foundation, ready for whatever comes next.">
+<meta property="og:image" content="https://crowstack.ai/favicon_io/android-chrome-512x512.png">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=20261102-2">
+<style>
+  /* services landing specifics (reuses the root design system and the /welcome layout) */
+  .welcome { min-height: 100vh; display: grid; align-content: center; }
+  .welcome__head { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+  .welcome__intro { max-width: 40rem; }
+  .welcome__intro .lede { margin-top: 1rem; }
+  .welcome__actions { margin-top: var(--space-md); display: flex; flex-wrap: wrap; gap: .9rem; }
+  .welcome__art { display: grid; place-items: center; }
+  .welcome__logo { width: min(280px, 72%); height: auto; display: block; filter: drop-shadow(0 30px 50px rgba(3,47,46,.22)); }
+  .welcome__main-link { display: inline-block; margin-top: var(--space-md); font-weight: 600; }
+  @media (max-width: 760px) {
+    .welcome__head { grid-template-columns: 1fr; }
+    .welcome__art { display: none; }
+  }
+</style>
+</head>
+<body>
+  <main class="section welcome">
+    <div class="container">
+      <div class="welcome__head">
+        <div class="welcome__intro">
+          <p class="eyebrow">Services</p>
+          <h1 class="h2">Turn your Slop into <span class="accent-gold accent-italic">Michelin-star Dining.</span></h1>
+          <p class="lede">You vibe-coded something real, and now every change breaks something else. Crowstack can refactor your existing codebase and set it up on a secure foundation that's ready for whatever comes next.</p>
+          <ul class="pillar__list">
+            <li><strong>More secure.</strong> Close the gaps that low-quality code leaves open.</li>
+            <li><strong>Easier to maintain.</strong> Clean structure, so fixes stop breaking other things.</li>
+            <li><strong>Faster to build on.</strong> Add features without fighting the codebase.</li>
+            <li><strong>Ready to scale.</strong> Built to hold up when your users show up.</li>
+          </ul>
+          <div class="welcome__actions">
+            <a class="btn btn-primary" href="https://calendar.app.google/LeszBhLbjRBb8Lea9" target="_blank" rel="noopener">Book a call</a>
+            <a class="btn btn-ghost" href="mailto:hello@crowstack.ai?subject=Crowstack%20refactoring">Email us</a>
+          </div>
+          <a class="welcome__main-link" href="/">Visit the main site &rarr;</a>
+        </div>
+        <div class="welcome__art">
+          <img class="welcome__logo" src="/assets/crowstack-crow-gold-tie.svg" alt="The Crowstack crow butler">
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!-- ===================== FOOTER (sitemap; same markup on every page) ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <a class="brand" href="/"><img class="footlogo" src="/assets/crowstack-crow-gold-tie.svg" alt="" style="height:28px"><span>Crowstack<span style="color:var(--gold)">.ai</span></span></a>
+      <nav class="footer__sitemap" aria-label="Sitemap">
+        <div class="footer__col">
+          <p class="footer__heading">Sections</p>
+          <a href="/#problem">Problem</a>
+          <a href="/#product">Product</a>
+          <a href="/#approach">Approach</a>
+          <a href="/#services">Services</a>
+          <a href="/#team">Team</a>
+          <a href="/#alpha">Alpha Partners</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Pages</p>
+          <a href="/">Home</a>
+          <a href="/services/">Services</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__heading">Contact</p>
+          <a href="mailto:hello@crowstack.ai">hello@crowstack.ai</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__meta">
+      <span>© 2026 Crowstack</span>
+      <span>Hold your agents to a higher standard.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
