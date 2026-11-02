@@ -28,7 +28,9 @@
   .welcome__logo { width: min(280px, 72%); height: auto; display: block; filter: drop-shadow(0 30px 50px rgba(3,47,46,.22)); }
   .welcome__main-link { display: inline-flex; align-items: center; gap: .4rem; margin-top: var(--space-md); font-weight: 600; }
   .welcome__arrow { width: 1.1rem; height: 1.1rem; }
+  .welcome__intro .pillar__list { margin-top: var(--space-lg); }
   @media (max-width: 760px) {
+    .welcome { min-height: 0; padding-block: 40px 56px; }
     .welcome__head { grid-template-columns: 1fr; }
     .welcome__art { display: none; }
   }
@@ -42,16 +44,16 @@
           <p class="eyebrow">Services</p>
           <h1 class="h2">Turn your Slop into <span class="accent-gold accent-italic">Michelin-star Dining.</span></h1>
           <p class="lede">You vibe-coded something real, and now every change breaks something else. Crowstack can refactor your existing codebase and set it up on a secure foundation that's ready for whatever comes next.</p>
+          <div class="welcome__actions">
+            <a class="btn btn-primary" href="https://calendar.app.google/LeszBhLbjRBb8Lea9" target="_blank" rel="noopener">Book a call</a>
+            <a class="btn btn-ghost" href="mailto:hello@crowstack.ai?subject=Crowstack%20refactoring">Email us</a>
+          </div>
           <ul class="pillar__list">
             <li><strong>More secure.</strong> Close the gaps that low-quality code leaves open.</li>
             <li><strong>Easier to maintain.</strong> Clean structure, so fixes stop breaking other things.</li>
             <li><strong>Faster to build on.</strong> Add features without fighting the codebase.</li>
             <li><strong>Ready to scale.</strong> Built to hold up when your users show up.</li>
           </ul>
-          <div class="welcome__actions">
-            <a class="btn btn-primary" href="https://calendar.app.google/LeszBhLbjRBb8Lea9" target="_blank" rel="noopener">Book a call</a>
-            <a class="btn btn-ghost" href="mailto:hello@crowstack.ai?subject=Crowstack%20refactoring">Email us</a>
-          </div>
           <a class="welcome__main-link" href="/">Visit the main site <svg class="welcome__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg></a>
         </div>
         <div class="welcome__art">
@@ -79,7 +81,7 @@
         <div class="footer__col">
           <p class="footer__heading">Pages</p>
           <a href="/">Home</a>
-          <a href="/services/">Services</a>
+          <a href="/services/">Refactoring services</a>
         </div>
         <div class="footer__col">
           <p class="footer__heading">Contact</p>

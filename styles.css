@@ -212,12 +212,11 @@ p { margin: 0 0 1rem; }
 
 /* ---------- footer ---------- */
 .footer { background: var(--ink); color: #cfe0dc; padding-block: 56px; }
-.footer__inner { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center; }
+.footer__inner { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: flex-start; }
 .footer .brand { color: #fff; }
 .footer .footlogo { filter: brightness(0) invert(1); }
 .footer a { color: #cfe0dc; }
 .footer a:hover { color: var(--gold); }
-.footer__inner { align-items: flex-start; }
 .footer__sitemap { display: grid; grid-template-columns: repeat(3, auto); gap: 2rem 3.5rem; }
 .footer__col { display: flex; flex-direction: column; gap: .45rem; font-size: .95rem; }
 .footer__heading { margin: 0 0 .35rem; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
