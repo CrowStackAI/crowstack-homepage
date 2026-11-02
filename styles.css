@@ -239,3 +239,22 @@ p { margin: 0 0 1rem; }
 
 /* ---------- misc ---------- */
 .anchor { scroll-margin-top: 90px; }
+
+/* ---------- product (RSI loop) ---------- */
+.step-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.step-grid .fcard h3 { margin-top: .5rem; }
+.loop { margin-top: var(--space-lg); }
+.loop__chips { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+.loop__chips .chip { min-width: 9rem; }
+.loop__arrow { color: var(--gold-deep); font-size: 1.4rem; line-height: 1; }
+.loop .rootcause { margin-top: var(--space-md); }
+.product__cta { margin-top: var(--space-md); }
+@media (max-width: 820px) { .step-grid { grid-template-columns: 1fr; } }
+
+/* ---------- services ---------- */
+.services__lede { margin-top: var(--space-sm); }
+.services__why { margin-top: var(--space-lg); }
+.services__cta { margin-top: var(--space-md); }
+.services__art { display: grid; place-items: center; }
+.services__art img { width: min(320px, 78%); filter: drop-shadow(0 30px 50px rgba(3,47,46,.22)); }
+@media (max-width: 820px) { .services__art img { width: min(200px, 60%); } }
