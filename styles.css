@@ -116,6 +116,10 @@ p { margin: 0 0 1rem; }
 .nav__links a:hover { color: var(--ink); }
 .nav__cta { display: flex; align-items: center; gap: .75rem; }
 @media (max-width: 860px) { .nav__links { display: none; } }
+@media (max-width: 480px) {
+  .nav .brand > span { display: none; }
+  .nav__cta .btn { padding: .7rem 1.1rem; font-size: .92rem; }
+}
 
 /* ---------- hero ---------- */
 .hero { position: relative; overflow: hidden; padding-block: clamp(72px, 11vw, 150px); }
@@ -239,6 +243,7 @@ p { margin: 0 0 1rem; }
 
 /* ---------- misc ---------- */
 .anchor { scroll-margin-top: 90px; }
+.nowrap { white-space: nowrap; }
 
 /* ---------- product (RSI loop) ---------- */
 .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
@@ -248,7 +253,8 @@ p { margin: 0 0 1rem; }
 .loop__step { display: inline-flex; align-items: center; gap: .8rem; }
 .loop__chips .chip { min-width: 9rem; }
 @media (max-width: 480px) { .loop__chips .chip { min-width: 6.5rem; } }
-.loop__arrow { color: var(--gold-deep); font-size: 1.4rem; line-height: 1; }
+.loop__arrow { color: var(--gold-deep); display: inline-flex; }
+.loop__arrow svg { width: 1.4rem; height: 1.4rem; }
 .loop .rootcause { margin-top: var(--space-md); }
 .product__cta { margin-top: var(--space-md); }
 
