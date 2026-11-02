@@ -80,8 +80,7 @@ p { margin: 0 0 1rem; }
 .section--ink .accent-gold { color: var(--gold); }
 
 .accent-gold { color: var(--gold-deep); }
-.accent { color: var(--gold-deep); font-style: italic; }
-.accent-italic { font-style: italic; }
+.accent { color: var(--gold-deep); }
 .approach-line2 { display: inline-block; margin-top: var(--space-sm); }
 
 /* ---------- buttons ---------- */
@@ -217,7 +216,7 @@ p { margin: 0 0 1rem; }
 .footer .footlogo { filter: brightness(0) invert(1); }
 .footer a { color: #cfe0dc; }
 .footer a:hover { color: var(--gold); }
-.footer__sitemap { display: grid; grid-template-columns: repeat(3, auto); gap: 2rem 3.5rem; }
+.footer__sitemap { display: grid; grid-template-columns: repeat(2, auto); gap: 2rem 3.5rem; }
 .footer__col { display: flex; flex-direction: column; gap: .45rem; font-size: .95rem; }
 .footer__heading { margin: 0 0 .35rem; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
 @media (max-width: 640px) { .footer__sitemap { grid-template-columns: 1fr 1fr; } }
