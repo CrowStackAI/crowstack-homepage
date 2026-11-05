@@ -29,7 +29,8 @@
   --shadow-lg: 0 24px 60px -20px rgba(3,47,46,.28);
 
   /* vertical rhythm scale */
-  --space-sm: 1rem;    /* heading: its paragraph/line */
+  --space-sm: 1rem;    /* heading: its second line */
+  --space-head: 1.5rem; /* heading: its paragraph */
   --space-md: 1.75rem; /* paragraph: paragraph */
   --space-lg: 2.5rem;  /* content block: block / major dividers */
 }
@@ -141,10 +142,11 @@ p { margin: 0 0 1rem; }
 
 /* ---------- generic section header ---------- */
 .section-head { max-width: 46rem; margin-bottom: clamp(2.4rem, 4vw, 3.6rem); }
-.section-head .lede { margin-top: var(--space-sm); }
+.section-head .lede { margin-top: var(--space-head); }
 .section-head.center { margin-inline: auto; text-align: center; }
 .section-head.center .eyebrow { justify-content: center; }
-.section-head.center .lede { margin-inline: auto; text-align: justify; text-align-last: center; }
+.section-head--flush { margin-bottom: 0; } /* a following block sets its own gap */
+.section-head.center .lede { margin-inline: auto; }
 
 /* ---------- problem: failure-mode cards ---------- */
 .lead-line { font-family: var(--font-display); font-size: clamp(2rem, 4.4vw, 3.2rem); color: var(--ink); font-weight: 600; letter-spacing: -.02em; max-width: 20ch; }
@@ -206,7 +208,7 @@ p { margin: 0 0 1rem; }
 
 /* ---------- alpha CTA ---------- */
 .cta-wrap { text-align: center; max-width: 60rem; margin-inline: auto; }
-.cta-wrap .lede { margin-inline: auto; text-align: justify; text-align-last: center; }
+.cta-wrap .lede { margin: var(--space-head) auto 0; max-width: 46rem; }
 .cta-wrap .btn { margin-top: 1.8rem; }
 
 /* ---------- footer ---------- */
@@ -224,7 +226,7 @@ p { margin: 0 0 1rem; }
 
 /* ---------- history sub-block + timeline (Problem) ---------- */
 .subsection { margin-top: var(--space-lg); }
-.history-title { margin-bottom: var(--space-sm); }
+.history-title { margin-bottom: var(--space-head); }
 .timeline { margin: var(--space-lg) 0; display: grid; gap: .65rem; }
 .tl-row { display: grid; grid-template-columns: 104px repeat(3, 1fr); gap: .8rem; align-items: stretch; }
 .tl-label { align-self: center; font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
@@ -239,8 +241,8 @@ p { margin: 0 0 1rem; }
 }
 
 /* ---------- our-solution (Approach) ---------- */
-.solution-block { max-width: 62rem; margin: var(--space-lg) auto 0; }
-.solution-lede { text-align: justify; text-align-last: center; margin-inline: auto; }
+.solution-block { margin: var(--space-md) auto 0; }
+.solution-lede { margin-inline: auto; max-width: 46rem; text-align: center; }
 .pillars-intro { text-align: center; margin-top: var(--space-lg); }
 .pillars-intro h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); }
 
@@ -255,7 +257,7 @@ p { margin: 0 0 1rem; }
 .product__cta { margin-top: var(--space-md); }
 
 /* ---------- services ---------- */
-.services__lede { margin-top: var(--space-sm); }
+.services__lede { margin-top: var(--space-head); }
 .services__why { margin-top: var(--space-lg); }
 .services__cta { margin-top: var(--space-md); }
 @media (max-width: 820px) { .services__art img { width: min(200px, 60%); } }
